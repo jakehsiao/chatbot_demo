@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="index.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script language="JavaScript" type="text/javascript"
+        src="https://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js">
+</script>
+<div id="root">
+	Enter the password: <input type="text" v-model="password" />
+	<div class="chatbox">
+		<p v-for="message in messages">{{message}}</p>
+	</div>
+	<input type="text" v-model="input_msg" />
+	<button class="send-btn" v-on:click="send_msg" >Send</button>
+</div>
+<script src="index.js"></script>
